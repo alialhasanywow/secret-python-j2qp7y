@@ -1,8 +1,5 @@
 import telebot
 import requests
-from flask import Flask
-from threading import Thread
-from server import server
 
 
 token = "6765941935:AAExwPMeWgZHP2okaEJuOvk58dMyPx5AyaM"
@@ -29,17 +26,5 @@ def send_welcome(message):
                                                                                                                 bot.reply_to(message, 'تم ارسال الكود  !')
                                                                                                                     except Exception as e:
                                                                                                                             bot.reply_to(message, 'غير الرقم او ارسلة من جديد او الرقم غلط 📨 !')
-
-                                                                                                                            app = Flask('')
-                                                                                                                            @app.route('/')
-                                                                                                                            def ping():
-                                                                                                                                return "PONG !,IM AWAKE"
-
-                                                                                                                                def run():
-                                                                                                                                    app.run(host='0.0.0.0', port=8080)
-
-                                                                                                                                    def server():
-                                                                                                                                        t = Thread(target=run)
-                                                                                                                                            t.start()
-                                                                                                                                            server()
-                                                                                                                                            bot.polling(none_stop=True)
+                                                                                                                                                                                                                                                            t.start()
+                                                                                                                                                                                                                                                                                 bot.polling(none_stop=True)
